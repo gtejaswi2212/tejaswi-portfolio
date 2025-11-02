@@ -80,19 +80,95 @@
       </p>
     </section>
 
-    <!-- About -->
-    <section id="about" class="mb-40 max-w-3xl">
+    <section id="about" class="mb-40 max-w-6xl">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+    
+    <!-- LEFT: text + skills -->
+    <div class="md:col-span-2">
+      <!-- header row -->
       <div class="flex items-center gap-3 mb-6">
         <span class="font-mono text-[13px] text-accent">01.</span>
         <h3 class="text-slate-100 text-xl font-semibold">About Me</h3>
         <div class="h-px flex-1 bg-slate-400/20"></div>
       </div>
-      <p class="text-slate-300 text-[15px] leading-relaxed">
-        I specialize in <b>Machine Learning, Data Engineering, and Generative AI</b> — blending analytics and automation to solve real-world problems.  
-        My toolkit includes Python, SQL, Tableau, Power BI, PySpark, TensorFlow, and AWS.  
-        I’m passionate about clean data pipelines, interpretable models, and impactful dashboards.
+
+      <!-- about paragraphs -->
+      <div class="text-slate-300 text-[15px] leading-relaxed space-y-4">
+        <p>
+          I am Tejaswi Ganji, a data-driven engineer and MS Data Science student at
+          <span class="text-slate-100 font-medium">Stony Brook University</span>,
+          where I work with large-scale clinical datasets (1B+ EHR records) to build
+          predictive models and decision-support dashboards. I focus on turning
+          messy healthcare data into reliable, reproducible analytics for clinicians
+          and research teams.:contentReference[oaicite:0]{index=0}
+        </p>
+
+        <p>
+          Previously at Accenture, I built automated analytics pipelines and KPI dashboards
+          in Python, SQL, and Power BI, helping reduce reporting time by 35% and
+          improving data accuracy across teams by standardizing SQL and ETL workflows.:contentReference[oaicite:1]{index=1}
+        </p>
+
+        <p>
+          I enjoy owning problems end-to-end: ingesting data, cleaning it, modeling it,
+          visualizing it, and shipping it in a way that stakeholders can actually use.
+          My work spans ML (churn, credit risk, supply chain delay), RAG/LLM apps,
+          and dashboarding for revenue and operations.:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}
+        </p>
+      </div>
+
+      <!-- skills subtitle -->
+      <p class="text-slate-100 font-medium text-[15px] mt-8 mb-4">
+        Here are a few technologies I’ve been working with recently:
       </p>
-    </section>
+
+      <!-- skills grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 text-[14px] font-mono text-slate-300 gap-y-2 gap-x-6">
+        <div class="space-y-2">
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>Python (Pandas, NumPy)</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>SQL (CTEs, Window Functions)</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>PySpark / ETL Pipelines</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>AWS S3 / Snowflake</span></div>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>Scikit-learn / LightGBM</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>TensorFlow / VGG-19</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>LLMs / RAG (LangGraph, FAISS)</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>Predictive Modeling (Churn / Risk)</span></div>
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>Power BI / Tableau Dashboards</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>KPI + Forecasting Analytics</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>Data Quality & Governance</span></div>
+          <div class="flex gap-2"><span class="text-accent">▹</span><span>CI/CD • Docker • Kubernetes</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: photo card -->
+    <div class="md:col-span-1 flex justify-center">
+      <div class="relative group">
+        <!-- border outline / accent frame -->
+        <div class="absolute -inset-2 rounded-md border border-accent opacity-80 pointer-events-none"></div>
+
+        <!-- image container -->
+        <div class="relative rounded-md overflow-hidden bg-lightNavy border border-slate-400/20 shadow-lg w-[260px] h-[260px] flex items-center justify-center">
+          <!-- Replace this with your <img> -->
+          <img
+            src="your-photo.jpg"
+            alt="Tejaswi Ganji"
+            class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
 
     <!-- Experience -->
     <section id="experience" class="mb-40">
@@ -114,7 +190,7 @@
       </div>
 
       <div>
-        <h4 class="text-slate-100 font-semibold">Data Scientist</h4>
+        <h4 class="text-slate-100 font-semibold">Data Analyst</h4>
         <p class="text-[13px] font-mono text-slate-400 mb-2">Accenture | Oct 2021 – Dec 2023</p>
         <ul class="list-disc ml-5 space-y-2 text-slate-300 text-[15px]">
           <li>Automated KPI dashboards with Power BI and SQL; reduced reporting time by 35%.</li>
@@ -126,63 +202,235 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="mb-40">
-      <div class="flex items-center gap-3 mb-6">
-        <span class="font-mono text-[13px] text-accent">03.</span>
-        <h3 class="text-slate-100 text-xl font-semibold">Projects</h3>
-        <div class="h-px flex-1 bg-slate-400/20"></div>
-      </div>
+   <section id="projects" class="mb-40 max-w-6xl">
+  <!-- Section header -->
+  <div class="flex items-center gap-3 mb-10">
+    <span class="font-mono text-[13px] text-accent">03.</span>
+    <h3 class="text-slate-100 text-xl font-semibold">Some Things I’ve Built</h3>
+    <div class="h-px flex-1 bg-slate-400/20"></div>
+  </div>
 
-      <div class="grid gap-6 max-w-3xl">
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">TravelWise – Adaptive RAG Travel Assistant</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">LangGraph • FAISS • Flask • Google AI Studio</p>
-          <p>Built an intelligent RAG-based travel chatbot using LangGraph, FAISS, and Flask, improving contextual accuracy by 30%.</p>
+  <div class="flex flex-col gap-24">
+
+    <!-- ========= PROJECT 1: TravelWise (RAG AI Assistant) ========= -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- left: screenshot -->
+      <div class="relative">
+        <div class="rounded-md border border-slate-400/30 bg-lightNavy/40 w-full h-[220px] flex items-center justify-center text-slate-400 text-center text-[13px] leading-relaxed">
+          TravelWise UI / Chat Screenshot<br />(add your image here)
         </div>
 
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">Credit Risk Modeling</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">Python • LightGBM • SQL • Tableau</p>
-          <p>Predicted loan default risk (AUC = 0.93) with LightGBM; engineered 5M+ records via AWS S3 pipelines.</p>
-        </div>
-
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">Bank Customer Churn Prediction</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">Python • Scikit-learn • Pandas</p>
-          <p>Predicted customer churn with 89% accuracy using ensemble ML models (Random Forest, XGBoost).</p>
-        </div>
-
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">Lung Cancer Detection Using Deep Learning</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">TensorFlow • VGG-19 • Keras</p>
-          <p>Trained CNN (VGG-19) on 25K+ medical images to detect cancer with 97% accuracy.</p>
-        </div>
-
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">Retail Sales Performance Dashboard</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">Tableau • Excel • SQL</p>
-          <p>Built multi-page Tableau dashboards integrating sales, marketing, and inventory data to improve decision speed by 30%.</p>
-        </div>
-
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">Business Revenue Optimization Dashboard</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">Power BI • SQL • Excel</p>
-          <p>Increased profit-tracking accuracy by 25% via unified KPI dashboards and DAX-based ROI metrics.</p>
-        </div>
-
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">Customer Sentiment Analysis</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">Python • NLP • Tableau</p>
-          <p>Analyzed 50K+ reviews using spaCy & TextBlob; built sentiment dashboards driving product strategy improvements.</p>
-        </div>
-
-        <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4">
-          <h4 class="text-slate-100 font-semibold">Supply Chain Delay Prediction</h4>
-          <p class="text-[13px] font-mono text-slate-400 mb-2">Python • Scikit-learn • SQL</p>
-          <p>Predicted shipment delays with 18% higher accuracy using logistic regression and random forests.</p>
+        <!-- floating description card (on desktop we float this, on mobile it just stays normal) -->
+        <div class="hidden md:block absolute bottom-[-20px] left-[40%] -translate-x-1/2 bg-lightNavy border border-slate-400/30 shadow-xl rounded-md p-4 max-w-[320px] text-[14px] leading-relaxed text-slate-200">
+          <p>
+            Built an adaptive NYC travel assistant using LangGraph + FAISS + Flask that delivers real-time,
+            context-aware recommendations. Improved query relevance by ~30% using retrieval-aware routing and
+            multi-source context fusion.:contentReference[oaicite:0]{index=0}
+          </p>
         </div>
       </div>
-    </section>
+
+      <!-- right: text content -->
+      <div class="flex flex-col justify-center text-right md:text-left">
+        <p class="font-mono text-[12px] text-accent mb-1">Featured Project</p>
+        <h4 class="text-slate-100 font-semibold text-lg">
+          TravelWise – Adaptive RAG Travel Assistant
+        </h4>
+
+        <!-- mobile fallback description (only show on small screens) -->
+        <div class="md:hidden mt-4 bg-lightNavy border border-slate-400/30 shadow-xl rounded-md p-4 text-[14px] leading-relaxed text-slate-200">
+          <p>
+            Built an adaptive NYC travel assistant using LangGraph + FAISS + Flask that delivers
+            real-time, context-aware recommendations. Improved query relevance by ~30% using
+            retrieval-aware routing and multi-source context fusion.:contentReference[oaicite:1]{index=1}
+          </p>
+        </div>
+
+        <!-- tech stack -->
+        <ul class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px] text-slate-400 mt-6">
+          <li>LangGraph</li>
+          <li>FAISS</li>
+          <li>Flask</li>
+          <li>LLM / RAG</li>
+          <li>Adaptive Retrieval</li>
+        </ul>
+
+        <!-- link icon placeholder -->
+        <div class="mt-4 text-slate-300 text-[14px] flex md:justify-start justify-end">
+          <span class="inline-flex items-center gap-2 hover:text-accent cursor-pointer">
+            <i class="fa-solid fa-arrow-up-right-from-square text-[13px]"></i>
+            <span class="font-mono text-[12px]">View Repo</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ========= PROJECT 2: Credit Risk Modeling ========= -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:flex-row-reverse">
+      <!-- text first on desktop right-to-left vibe -->
+      <div class="order-2 md:order-1 flex flex-col justify-center">
+        <p class="font-mono text-[12px] text-accent mb-1">Featured Project</p>
+        <h4 class="text-slate-100 font-semibold text-lg">
+          Credit Risk Modeling & Default Scoring
+        </h4>
+
+        <!-- mobile description -->
+        <div class="md:hidden mt-4 bg-lightNavy border border-slate-400/30 shadow-xl rounded-md p-4 text-[14px] leading-relaxed text-slate-200">
+          <p>
+            Built and optimized ML models to predict loan default risk with AUC = 0.93 using LightGBM.
+            Engineered and aggregated 5M+ financial/behavioral records via SQL + AWS S3 pipelines.
+            Reduced false positives by 28% while keeping interpretability for stakeholders.:contentReference[oaicite:2]{index=2}
+          </p>
+        </div>
+
+        <!-- stack -->
+        <ul class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px] text-slate-400 mt-6">
+          <li>Python</li>
+          <li>LightGBM</li>
+          <li>SQL / AWS S3</li>
+          <li>Tableau</li>
+          <li>Risk Scoring</li>
+        </ul>
+
+        <div class="mt-4 text-slate-300 text-[14px] flex justify-start">
+          <span class="inline-flex items-center gap-2 hover:text-accent cursor-pointer">
+            <i class="fa-solid fa-arrow-up-right-from-square text-[13px]"></i>
+            <span class="font-mono text-[12px]">View Repo</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- screenshot w/ floating card -->
+      <div class="order-1 md:order-2 relative">
+        <div class="rounded-md border border-slate-400/30 bg-lightNavy/40 w-full h-[220px] flex items-center justify-center text-slate-400 text-center text-[13px] leading-relaxed">
+          Risk Dashboard / ROC Curve<br />(add screenshot here)
+        </div>
+
+        <div class="hidden md:block absolute bottom-[-20px] left-[20px] bg-lightNavy border border-slate-400/30 shadow-xl rounded-md p-4 max-w-[340px] text-[14px] leading-relaxed text-slate-200">
+          <p>
+            Built production-style credit risk scoring for loan default prediction.
+            Achieved AUC = 0.93 and improved decision quality by making model outputs explainable
+            through Tableau dashboards for non-technical stakeholders.:contentReference[oaicite:3]{index=3}
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ========= PROJECT 3: Retail Sales Performance Dashboard ========= -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- screenshot -->
+      <div class="relative">
+        <div class="rounded-md border border-slate-400/30 bg-lightNavy/40 w-full h-[220px] flex items-center justify-center text-slate-400 text-center text-[13px] leading-relaxed">
+          Tableau Sales Dashboard<br />(add screenshot here)
+        </div>
+
+        <div class="hidden md:block absolute bottom-[-20px] left-[40%] -translate-x-1/2 bg-lightNavy border border-slate-400/30 shadow-xl rounded-md p-4 max-w-[320px] text-[14px] leading-relaxed text-slate-200">
+          <p>
+            Designed a multi-page Tableau dashboard unifying sales, marketing, and
+            inventory data. Improved executive decision speed by 30% and enabled
+            real-time KPI tracking for revenue growth and retention strategy.:contentReference[oaicite:4]{index=4}
+          </p>
+        </div>
+      </div>
+
+      <!-- text -->
+      <div class="flex flex-col justify-center text-right md:text-left">
+        <p class="font-mono text-[12px] text-accent mb-1">Featured Project</p>
+        <h4 class="text-slate-100 font-semibold text-lg">
+          Retail Sales Performance Dashboard
+        </h4>
+
+        <!-- mobile description -->
+        <div class="md:hidden mt-4 bg-lightNavy border border-slate-400/30 shadow-xl rounded-md p-4 text-[14px] leading-relaxed text-slate-200">
+          <p>
+            Designed a multi-page Tableau dashboard unifying sales, marketing,
+            and inventory data. Improved executive decision speed by 30% and
+            drove seasonality-based pricing and inventory strategy.:contentReference[oaicite:5]{index=5}
+          </p>
+        </div>
+
+        <ul class="flex flex-wrap gap-x-4 gap-y-1 font-mono text-[11px] text-slate-400 mt-6">
+          <li>Tableau</li>
+          <li>SQL</li>
+          <li>Excel</li>
+          <li>KPI / Forecasting</li>
+        </ul>
+
+        <div class="mt-4 text-slate-300 text-[14px] flex md:justify-start justify-end">
+          <span class="inline-flex items-center gap-2 hover:text-accent cursor-pointer">
+            <i class="fa-solid fa-arrow-up-right-from-square text-[13px]"></i>
+            <span class="font-mono text-[12px]">View Dashboard</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ========= PROJECT 4: Churn / NLP / Supply Chain mini-cards row ========= -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Churn Prediction -->
+      <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4 flex flex-col justify-between">
+        <div>
+          <p class="font-mono text-[12px] text-accent mb-2">Featured Project</p>
+          <h4 class="text-slate-100 font-semibold text-[16px] mb-3">Customer Churn Prediction</h4>
+          <p class="text-[14px] text-slate-300 leading-relaxed">
+            Built ensemble churn models (Random Forest, XGBoost) to identify at-risk
+            customers with ~89% accuracy and automated dashboards to surface
+            actionable retention signals to marketing teams.:contentReference[oaicite:6]{index=6}
+          </p>
+        </div>
+        <ul class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px] text-slate-400 mt-4">
+          <li>Python</li>
+          <li>Pandas</li>
+          <li>Scikit-learn</li>
+          <li>Matplotlib</li>
+        </ul>
+      </div>
+
+      <!-- Sentiment Analysis -->
+      <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4 flex flex-col justify-between">
+        <div>
+          <p class="font-mono text-[12px] text-accent mb-2">Featured Project</p>
+          <h4 class="text-slate-100 font-semibold text-[16px] mb-3">Customer Sentiment Analysis</h4>
+          <p class="text-[14px] text-slate-300 leading-relaxed">
+            Analyzed 50K+ customer reviews using spaCy / TextBlob NLP and built Tableau
+            dashboards to visualize product sentiment by region and category,
+            guiding feature improvement and QA feedback loops.:contentReference[oaicite:7]{index=7}
+          </p>
+        </div>
+        <ul class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px] text-slate-400 mt-4">
+          <li>Python</li>
+          <li>NLP</li>
+          <li>Tableau</li>
+          <li>TextBlob</li>
+        </ul>
+      </div>
+
+      <!-- Supply Chain Delay Prediction -->
+      <div class="bg-lightNavy/40 border border-slate-400/20 rounded-md p-4 flex flex-col justify-between">
+        <div>
+          <p class="font-mono text-[12px] text-accent mb-2">Featured Project</p>
+          <h4 class="text-slate-100 font-semibold text-[16px] mb-3">Supply Chain Delay Prediction</h4>
+          <p class="text-[14px] text-slate-300 leading-relaxed">
+            Predicted shipment delays with 18% higher accuracy using logistic regression
+            and random forest. Automated ETL + alerting dashboards to surface
+            bottlenecks early and improve supplier visibility.:contentReference[oaicite:8]{index=8}
+          </p>
+        </div>
+        <ul class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-[11px] text-slate-400 mt-4">
+          <li>Python</li>
+          <li>Scikit-learn</li>
+          <li>SQL</li>
+          <li>ETL</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- Contact -->
     <section id="contact" class="text-center max-w-xl mx-auto">
